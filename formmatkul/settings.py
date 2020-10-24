@@ -83,8 +83,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-if PRODUCTION:
-    DATABASES['default'] = dj_database_url.config()
+
 
 
 # Password validation
