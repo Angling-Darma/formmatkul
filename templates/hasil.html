@@ -1,0 +1,38 @@
+<html>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<head>
+<style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+</head>
+<body>
+    <h2>Daftar Matkul</h2>
+<table>    
+    <tr>
+        <th>Nama</th>
+        <th>Deskripsi</th>
+    </tr>
+{% for o in all_matkul %}
+    <tr>
+        <td>{{o.nama}}</td>
+        <td>{{o.desc}}</td>
+    </tr>
+{% endfor %}
+</table>
+</body>
+<a class="btn btn-primary" href="form" role="button">Kembali</a>
+</html>

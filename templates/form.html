@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<html>
+<title>
+    WEW
+</title>
+<form action='/hasil/' method="POST">{% csrf_token %}
+Masukkan Nama Matkul
+<p><input id='nama' type='text' name='nama' placeholder="Masukkan Nama Matkul">
+    </p>
+    Masukkan Deskripsi Matkul
+<p><input id='desc' type='text' name='desc' placeholder="Masukkan Deskripsi Matkul">
+</p>
+
+    <input class="btn btn-primary" type="submit" value="Submit">
+</form>
+</html>
